@@ -22,7 +22,7 @@ header {
 	.nav-bar-link,
 	.nav-bar-social {
 		display: flex;
-		gap: 20px;
+		gap: 25px;
 	}
 }
 
@@ -31,7 +31,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	padding-top: 125px;
+	padding-top: 150px;
 	gap: 20px;
 	width: 100%;
 }
@@ -41,11 +41,10 @@ header {
 	flex-direction: column;
 	gap: 30px;
 	background-color: white;
-	padding: 20px 25px;
+	padding: 20px 40px;
 	border-radius: 30px;
 	-webkit-box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
-	width: 80%;
 	position: absolute;
 	bottom: -15%;
 
@@ -56,6 +55,7 @@ header {
 	.tech-stack-list {
 		display: flex;
 		justify-content: space-around;
+		gap: calc(5px + 2vw);
 	}
 
 	.tech-stack-item {
