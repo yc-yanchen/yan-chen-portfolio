@@ -15,7 +15,8 @@ h6 {
 }
 
 a,
-p {
+p,
+li {
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.8rem;
 	padding: 0;
@@ -24,20 +25,15 @@ p {
 
 a,
 a:visited {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
 h1 {
 	font-weight: 500;
-	color: white;
 }
 
-.logo,
-.header-greeting,
-.header-message,
-.nav-item a,
-.social-link-item a {
+.text-white {
 	color: white;
 }
 
