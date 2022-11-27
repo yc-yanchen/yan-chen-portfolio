@@ -9,6 +9,7 @@ main {
 	}
 }
 
+// Styling for the section.main-project layout
 .main-project {
 	display: flex;
 	flex-direction: column;
@@ -20,6 +21,7 @@ main {
 	}
 }
 
+// Styling for the ul.project-list layout
 .project-list {
 	display: flex;
 	justify-content: space-between;
@@ -37,36 +39,53 @@ main {
 			border-radius: 5px;
 		}
 	}
+	// Styling for the overall look of the overlay layout
 	.project-overlay-item {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-
 		background-color: rgba(0, 0, 0, 0.9);
 		position: relative;
 		height: 100%;
 		width: 100%;
 		top: -100%;
 		border-radius: 5px;
-
-		padding: 35px 35px;
+		padding: 25px 25px;
+		// Hiding the overlay element
 		opacity: 0;
 		transition: opacity 0.15s;
 	}
 
-	// Display the overlay on the project preview on hover
+	// Display the overlay element on hover or on focus
 	.project-item:hover .project-overlay-item,
 	.project-item:focus .project-overlay-item {
 		opacity: 1;
 	}
+}
 
+// Styling for the elements within the overlay
+.project-overlay-item {
 	.project-link-list,
 	.project-tech-list {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px 5px;
 	}
+	.project-overlay-information,
+	.project-overlay-detail {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	// Adding a separator between each .project-tech-item except for the last one
+	.project-tech-item::after {
+		content: " |";
+	}
+	.project-tech-item:last-child::after {
+		content: "";
+	}
 
+	// Styling for the link which leads to the repository/ live site.
 	.project-link-list {
 		gap: 10px 15px;
 		a {
@@ -77,15 +96,11 @@ main {
 			width: 45%;
 			transition: background-color 0.15s, color 0.15s;
 		}
+		// Changes colour on hover
+		a:focus,
 		a:hover {
 			background-color: var.$primary;
 			color: white;
 		}
-	}
-	.project-overlay-information,
-	.project-overlay-detail {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
 	}
 }

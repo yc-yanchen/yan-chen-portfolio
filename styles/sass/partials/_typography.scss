@@ -1,7 +1,6 @@
 @use "./variables" as var;
 
 // General typography styling
-
 h1,
 h2,
 h3,
@@ -38,9 +37,17 @@ h1 {
 	color: white;
 }
 
+.text-black {
+	color: var.$black;
+}
+
+.text-gray {
+	color: gray;
+}
+
 .nav-item a:focus,
 .nav-item a:hover {
-	border-bottom: 4px solid rgba(254, 254, 254, 0.5);
+	border-bottom: 4px solid var.$gray-transparent;
 }
 
 .logo {
@@ -53,26 +60,24 @@ h1 {
 	font-weight: 300;
 }
 
-.main-project-heading {
-	color: var.$black;
-}
+// On hover or on focus, turn the icon and text to var.$primary
+.tech-stack-list {
+	.tech-stack-item p,
+	.tech-stack-item i {
+		color: gray;
+		transition: color 0.15s;
+	}
 
-.tech-stack-heading,
-.tech-stack-item p,
-.tech-stack-item i {
-	color: gray;
-	transition: color 0.15s;
-}
-
-.tech-stack-item:hover p,
-.tech-stack-item:hover i {
-	color: var.$primary;
+	.tech-stack-item:hover p,
+	.tech-stack-item:hover i {
+		color: var.$primary;
+	}
 }
 
 .project-title-heading,
 .tech-stack-heading {
 	font-weight: 400;
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 
 .tech-stack-item i {
