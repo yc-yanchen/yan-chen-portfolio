@@ -21,21 +21,42 @@ main {
 	width: 100%;
 	position: relative;
 	.project-item {
-		height: 25vw;
-		width: 25vw;
+		height: 300px;
+		width: calc((100% / 3) - 5px);
 	}
 	.img-container {
 		height: 100%;
-		width: 100%;
 		img {
 			object-fit: cover;
 			height: 100%;
+			border-radius: 5px;
 		}
 	}
 	.project-item-overlay {
+		display: flex;
+		flex-direction: column;
+
+		background-color: rgba(0, 0, 0, 0.6);
 		position: relative;
 		height: 100%;
 		width: 100%;
 		top: -100%;
+		border-radius: 5px;
+
+		padding: 20px;
+		opacity: 0;
+		transition: opacity 0.15s;
+	}
+
+	// Display the overlay on the project preview on hover
+	.project-item:hover .project-item-overlay,
+	.project-item:focus .project-item-overlay {
+		opacity: 1;
+	}
+	.project-link-list,
+	.project-tech-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0 5px;
 	}
 }
