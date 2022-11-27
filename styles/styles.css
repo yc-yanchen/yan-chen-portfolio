@@ -485,8 +485,9 @@ main .wrapper {
           flex-direction: column;
   gap: 15px;
 }
+
 header {
-  background: url("../assets/21-07-16_19.jpeg");
+  background: url("../assets/header-bg.jpeg");
   background-size: 100% 100%;
   padding: 25px 0 225px;
   position: relative;
