@@ -1,7 +1,6 @@
 header {
-	background: url("../assets/header-bg-2.jpeg") rgb(37, 200, 232);
-	background-blend-mode: multiply;
-	background-size: cover;
+	background: url("../assets/21-07-16_19.jpeg");
+	background-size: 100% 100%;
 	padding: 25px 0 225px;
 	position: relative;
 	border-bottom-left-radius: 250%100px;
@@ -55,7 +54,7 @@ header {
 	.tech-stack-list {
 		display: flex;
 		justify-content: space-around;
-		gap: calc(5px + 2vw);
+		gap: calc(5px + 1.5vw);
 	}
 
 	.tech-stack-item {
@@ -63,5 +62,6 @@ header {
 		flex-direction: column;
 		align-items: center;
 		gap: 15px;
+		width: 100px;
 	}
 }
