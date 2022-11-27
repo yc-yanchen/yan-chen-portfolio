@@ -24,12 +24,15 @@ main {
 // Styling for the ul.project-list layout
 .project-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 	position: relative;
+	flex-wrap: wrap;
+	gap: 8px 0;
 	.project-item {
 		height: 350px;
-		width: calc((100% / 3) - 6px);
+		// Change the denominator to adjust number of projects displayed per row
+		width: calc((100% / 2) - 8px);
 	}
 	.img-container {
 		height: 100%;

@@ -349,7 +349,7 @@ h1 {
 .project-title-heading,
 .tech-stack-heading {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .tech-stack-item i {
@@ -406,15 +406,17 @@ main .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px 0;
 }
 .project-list .project-item {
   height: 350px;
-  width: calc(33.3333333333% - 6px);
+  width: calc(50% - 8px);
 }
 .project-list .img-container {
   height: 100%;
