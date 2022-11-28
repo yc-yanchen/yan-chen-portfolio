@@ -1,15 +1,13 @@
 @use "./variables" as var;
 
-.section-divider {
-	margin-top: 100px;
-	// padding-top: 100px;
-	// border-top: 1px solid var.$gray-light;
+.about-section {
+	align-items: center;
 }
 
 .about-content-container {
-	margin-top: 50px;
 	gap: 40px;
 	width: 80%;
+
 	.img-container {
 		width: 100px;
 		height: 100px;

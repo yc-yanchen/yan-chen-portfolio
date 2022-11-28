@@ -1,0 +1,52 @@
+@use "./variables" as var;
+
+.contact-background-color {
+	background-color: var.$gray-blue;
+}
+
+.contact-section-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: calc(100% / 1.75);
+}
+
+.visitor-information {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	.visitor-information-item {
+		width: calc((100% / 2));
+		input {
+			width: 100%;
+		}
+	}
+}
+
+.input-form-style {
+	border: 1px solid var.$gray-light;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+textarea {
+	resize: none;
+	height: 200px;
+}
+
+input[type="submit"] {
+	padding: 15px;
+	background-color: var.$gray-light;
+	border: none;
+	width: 200px;
+	align-self: flex-end;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.15s, color 0.15s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	background-color: var.$primary;
+	color: white;
+}

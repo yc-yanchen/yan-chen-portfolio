@@ -1,3 +1,5 @@
+@use "./variables" as var;
+
 html {
 	font-size: 62.5%;
 }
@@ -6,4 +8,25 @@ html {
 	width: 80%;
 	max-width: 1300px;
 	margin: 0 auto;
+}
+
+// Styling for the section.main-project layout
+.main-section {
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	gap: 60px;
+	width: 100%;
+	.main-section-heading {
+		align-self: flex-start;
+	}
+}
+
+.section-divider {
+	border-top: 1px solid var.$gray-light;
+	margin-top: 125px;
+}
+
+.section-margin {
+	margin: 125px 0;
 }
