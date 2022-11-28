@@ -294,11 +294,11 @@ html {
 
 .section-divider {
   border-top: 1px solid #dce0e4;
-  margin-top: 125px;
+  margin-top: 100px;
 }
 
 .section-margin {
-  margin: 125px 0;
+  margin: 100px 0;
 }
 
 h1,
@@ -396,7 +396,7 @@ p {
 
 .contact-flex-container a {
   color: #121518;
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 header {
@@ -468,13 +468,13 @@ header .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  position: absolute;
+  bottom: -15%;
   background-color: white;
   padding: 20px 40px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  bottom: -15%;
 }
 .tech-stack-container .tech-stack-heading {
   text-align: center;

@@ -14,7 +14,6 @@ html {
 .main-section {
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 	gap: 60px;
 	width: 100%;
 	.main-section-heading {
@@ -22,11 +21,13 @@ html {
 	}
 }
 
+// Add a line divider at the top of an element
 .section-divider {
 	border-top: 1px solid var.$gray-light;
-	margin-top: 125px;
+	margin-top: 100px;
 }
 
+// Add margin at the top and bottom of an element
 .section-margin {
-	margin: 125px 0;
+	margin: 100px 0;
 }

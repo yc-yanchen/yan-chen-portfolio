@@ -1,20 +1,24 @@
 @use "./variables" as var;
 
+// Background color applied under the about section
 .contact-background-color {
 	background-color: var.$gray-blue;
 }
 
+// Horizontal layout for the text and the form
 .contact-flex-container {
 	display: flex;
 	gap: 30px;
 }
 
+// Vertical layout for the text
 .contact-text-container {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
+// Vertical layout for the form
 .contact-section-form {
 	display: flex;
 	flex-direction: column;
@@ -22,6 +26,7 @@
 	width: calc(100% / 1.5);
 }
 
+// Setting the name and email input to sit horizontally beside each other
 .visitor-information {
 	display: flex;
 	flex-direction: row;
@@ -34,17 +39,20 @@
 	}
 }
 
+// General styling for text based inputs
 .input-form-style {
 	border: 1px solid var.$gray-light;
 	padding: 15px;
 	border-radius: 5px;
 }
 
+// Resizing the textarea element
 textarea {
 	resize: none;
 	height: 200px;
 }
 
+// Styling for the submit button input
 input[type="submit"] {
 	padding: 15px;
 	background-color: var.$gray-light;
@@ -56,6 +64,7 @@ input[type="submit"] {
 	transition: background-color 0.15s, color 0.15s;
 }
 
+// Hover and focus effect for the button
 input[type="submit"]:hover,
 input[type="submit"]:focus {
 	background-color: var.$primary;

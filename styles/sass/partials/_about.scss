@@ -1,16 +1,20 @@
 @use "./variables" as var;
 
+// Layout for the overall about section
 .about-section {
 	align-items: center;
 }
 
+// Layout for the paragraphs and profile image
 .about-content-container {
 	gap: 40px;
 	width: 80%;
 
+	// For the profile image
 	.img-container {
 		width: 100px;
 		height: 100px;
+		// Make the profile image into a circle
 		img {
 			width: 100%;
 			object-fit: cover;

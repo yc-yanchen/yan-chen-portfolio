@@ -12,17 +12,22 @@ header {
 	}
 }
 
+// Horizontal layout for the navigation bar in thhe header
 .header-nav {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
+
+// Horizontal layout for the smaller components of the navigation bar
 .nav-bar-container,
 .nav-bar-link,
 .nav-bar-social {
 	display: flex;
 	gap: 25px;
 }
+
+// General styling
 .center-column-flex {
 	display: flex;
 	flex-direction: column;
@@ -30,23 +35,25 @@ header {
 	text-align: center;
 }
 
+// Layout for the text container in the header
 .header-text-container {
 	padding-top: 150px;
 	gap: 20px;
 	width: 100%;
 }
 
+// Layout for the tech stack container
 .tech-stack-container {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+	position: absolute;
+	bottom: -15%;
 	background-color: white;
 	padding: 20px 40px;
 	border-radius: 30px;
 	-webkit-box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
-	position: absolute;
-	bottom: -15%;
 
 	.tech-stack-heading {
 		text-align: center;
