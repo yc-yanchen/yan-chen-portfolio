@@ -30,8 +30,8 @@
 				<div class="nav-bar-container">
 					<ul class="nav-bar-link">
 						<li class="nav-item"><a href="index.html">Home</a></li>
-						<li class="nav-item"><a href="#about-me">About Me</a></li>
 						<li class="nav-item"><a href="#projects">Projects</a></li>
+						<li class="nav-item"><a href="#about">About Me</a></li>
 						<li class="nav-item"><a href="#contact">Contact</a></li>
 					</ul>
 					<ul class="nav-bar-social">
@@ -48,7 +48,7 @@
 				</div>
 			</nav>
 
-			<div class="header-text-container text-white">
+			<div class="header-text-container text-white center-column-flex">
 				<h2 class="header-greeting">Hi, I am Yan Chen</h2>
 				<p class="header-message">
 					I am a web developer based in Toronto Canada.
@@ -96,8 +96,8 @@
 
 	<main>
 		<div class="wrapper">
-			<section class="main-project">
-				<h3 class="main-project-heading text-black">My Projects</h3>
+			<section class="main-section project-section" id="projects">
+				<h3 class="main-section-heading text-black">Projects</h3>
 				<ul class="project-list">
 					<!-- .project-item START -->
 					<li class="project-item">
@@ -123,11 +123,12 @@
 								</ul>
 								<ul class="project-link-list">
 									<li class="project-link-item">
-										<a href="#">To Repository <i class="fa-brands fa-github"
-												alt="GitHub icon"></i></a>
+										<a href="https://github.com/yc-yanchen/textilee">To Repository <i
+												class="fa-brands fa-github" alt="GitHub icon"></i></a>
 									</li>
 									<li class="project-link-item">
-										<a href="#">To Live Site <i class="fa-solid fa-up-right-from-square"
+										<a href="https://prismatic-chebakia-cde6fc.netlify.app">To Live Site <i
+												class="fa-solid fa-up-right-from-square"
 												alt="Up-right arrow icon"></i></a>
 									</li>
 								</ul>
@@ -148,7 +149,8 @@
 							<div class="project-overlay-information">
 								<h4 class="project-title-heading">Trivia Quiz</h4>
 								<p>Web application which makes an API call that retrieves trivia questions based on
-									player's settings. Final score can be stored in Firebase along with a player
+									players' settings. Answers are evaluated and final score can be stored in Firebase
+									along with a player
 									initials.</p>
 							</div>
 							<!-- .project-overlay-information END -->
@@ -163,11 +165,12 @@
 								</ul>
 								<ul class="project-link-list">
 									<li class="project-link-item">
-										<a href="#">To Repository <i class="fa-brands fa-github"
-												alt="GitHub icon"></i></a>
+										<a href="https://github.com/yc-yanchen">To Repository <i
+												class="fa-brands fa-github" alt="GitHub icon"></i></a>
 									</li>
 									<li class="project-link-item">
-										<a href="#">To Live Site <i class="fa-solid fa-up-right-from-square"
+										<a href="https://enchanting-queijadas-7e8a6b.netlify.app">To Live Site <i
+												class="fa-solid fa-up-right-from-square"
 												alt="Up-right arrow icon"></i></a>
 									</li>
 								</ul>
@@ -211,7 +214,6 @@
 								</ul>
 							</div>
 							<!-- .project-overlay-detail END -->
-
 						</div>
 						<!-- .project-overlay-item END -->
 					</li>
@@ -219,11 +221,59 @@
 				</ul>
 				<!-- .project-list END -->
 			</section>
-			<!-- .main-project END -->
-
-
+			<!-- .main-section END -->
 		</div>
 		<!-- .wrapper END -->
+
+
+		<div class="wrapper">
+			<section class="main-section about-section section-divider" id="about">
+				<!-- If the styling works, change the class to something more general -->
+				<h3 class="main-section-heading text-black">About Me</h3>
+
+				<div class="about-content-container center-column-flex ">
+					<p>Thank you for checking out my portfolio! I am a student from Juno College of
+						Technology currently enrolled in the Web Immersive Bootcamp. Previously worked in
+						pharmaceuticals for three years with a Chemistry degree from Toronto Metropolitan University
+						(Formerly Ryerson University), I am now looking to follow my passion for coding and web
+						development by making the jump to the field of technology.
+					</p>
+					<p>
+						When taking a break from coding, I like to go out for hikes and practice taking landscape
+						photography.
+					</p>
+					<div class="img-container">
+						<img src="./assets/profile-picture-1.jpeg" alt="">
+					</div>
+				</div>
+				<!-- .about-content-container END -->
+			</section>
+			<!-- .main-section END -->
+		</div>
+		<!-- .wrapper END -->
+
+
+		<section class="main-section contact-section section-divider" id="contact">
+			<div class="wrapper">
+				<!-- If the styling works, change the class to something more general -->
+				<h3 class="main-section-heading text-black">Contact</h3>
+				<form action="#">
+					<ul class="visitor-information">
+						<li class="visitor-information-item">
+							<label for="visitor-name" class="sr-only">Name</label>
+							<input type="text" id="visitor-name" placeholder="Name">
+						</li>
+						<li class="visitor-information-item">
+							<label for="visitor-email" class="sr-only">Name</label>
+							<input type="email" id="visitor-email" placeholder="Email">
+						</li>
+					</ul>
+					<textarea name="message" id="visitor-message" cols="30" rows="10" placeholder="Message"></textarea>
+				</form>
+
+			</div>
+		</section>
+		<!-- .main-section END -->
 	</main>
 </body>
 

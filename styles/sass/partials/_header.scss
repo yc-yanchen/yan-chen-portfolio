@@ -25,11 +25,14 @@ header {
 	}
 }
 
-.header-text-container {
+.center-column-flex {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 	text-align: center;
+}
+
+.header-text-container {
 	padding-top: 150px;
 	gap: 20px;
 	width: 100%;
