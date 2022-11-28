@@ -35,6 +35,12 @@ h1 {
 	font-weight: 500;
 }
 
+p {
+	letter-spacing: 1.25px;
+	font-weight: 300;
+	line-height: 2.4rem;
+}
+
 .text-white {
 	color: white;
 }
@@ -86,13 +92,14 @@ h1 {
 	font-size: 3rem;
 }
 
-p {
-	letter-spacing: 1.25px;
-	font-weight: 300;
-	line-height: 2.4rem;
-}
-
 .project-tech-item,
 .project-overlay-item p {
 	color: var.$gray-transparent;
+}
+
+.contact-flex-container {
+	a {
+		color: var.$black;
+		font-size: 2.4rem;
+	}
 }

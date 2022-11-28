@@ -228,7 +228,7 @@
 
 		<div class="section-divider">
 			<div class="wrapper">
-				<section class="main-section about-section section-margin" id=" about">
+				<section class="main-section about-section section-margin" id="about">
 					<!-- If the styling works, change the class to something more general -->
 					<h3 class="main-section-heading text-black">About Me</h3>
 					<div class="about-content-container center-column-flex ">
@@ -258,21 +258,37 @@
 				<section class="main-section contact-section section-margin" id="contact">
 					<!-- If the styling works, change the class to something more general -->
 					<h3 class="main-section-heading text-black">Contact</h3>
-					<form action="#" class="contact-section-form">
-						<ul class="visitor-information">
-							<li class="visitor-information-item">
-								<label for="visitor-name" class="sr-only">Name</label>
-								<input type="text" id="visitor-name" placeholder="Name" class="input-form-style">
-							</li>
-							<li class="visitor-information-item">
-								<label for="visitor-email" class="sr-only">Name</label>
-								<input type="email" id="visitor-email" placeholder="Email" class="input-form-style">
-							</li>
-						</ul>
-						<textarea name="message" id="visitor-message" cols="30" rows="10" placeholder="Message"
-							class="input-form-style"></textarea>
-						<input type="submit" value="Submit Message">
-					</form>
+					<div class="contact-flex-container">
+						<div class="contact-text-container">
+							<p>Feel free to drop a message here or contact me directly through my social medias.</p>
+							<ul class="nav-bar-social">
+								<li class="social-link-item">
+									<a href="https://www.linkedin.com/in/yan-chen-41b80a187/"><i
+											class="fa-brands fa-linkedin" alt="LinkedIn icon"></i></a>
+								</li>
+								<li class="social-link-item">
+									<a href="https://github.com/yc-yanchen"><i class="fa-brands fa-github"
+											alt="GitHub icon"></i></a>
+								</li>
+							</ul>
+							<!-- .social-link END -->
+						</div>
+						<form action="#" class="contact-section-form">
+							<ul class="visitor-information">
+								<li class="visitor-information-item">
+									<label for="visitor-name" class="sr-only">Name</label>
+									<input type="text" id="visitor-name" placeholder="Name" class="input-form-style">
+								</li>
+								<li class="visitor-information-item">
+									<label for="visitor-email" class="sr-only">Name</label>
+									<input type="email" id="visitor-email" placeholder="Email" class="input-form-style">
+								</li>
+							</ul>
+							<textarea name="message" id="visitor-message" cols="30" rows="10" placeholder="Message"
+								class="input-form-style"></textarea>
+							<input type="submit" value="Submit Message">
+						</form>
+					</div>
 				</section>
 				<!-- .main-section END -->
 			</div>
@@ -280,7 +296,7 @@
 		</div>
 	</main>
 	<footer>
-		<p>Credit goes here</p>
+		<p class="text-white">Created at Juno College of Technology</p>
 	</footer>
 </body>
 

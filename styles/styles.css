@@ -335,6 +335,12 @@ h1 {
   font-weight: 500;
 }
 
+p {
+  letter-spacing: 1.25px;
+  font-weight: 300;
+  line-height: 2.4rem;
+}
+
 .text-white {
   color: white;
 }
@@ -383,15 +389,14 @@ h1 {
   font-size: 3rem;
 }
 
-p {
-  letter-spacing: 1.25px;
-  font-weight: 300;
-  line-height: 2.4rem;
-}
-
 .project-tech-item,
 .project-overlay-item p {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-flex-container a {
+  color: #121518;
+  font-size: 2.4rem;
 }
 
 header {
@@ -424,9 +429,10 @@ header .wrapper {
           justify-content: space-between;
   width: 100%;
 }
-.header-nav .nav-bar-container,
-.header-nav .nav-bar-link,
-.header-nav .nav-bar-social {
+
+.nav-bar-container,
+.nav-bar-link,
+.nav-bar-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,6 +639,24 @@ main .wrapper {
   background-color: #f1f5f9;
 }
 
+.contact-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.contact-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
 .contact-section-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,7 +666,7 @@ main .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  width: 57.1428571429%;
+  width: 66.6666666667%;
 }
 
 .visitor-information {
@@ -690,4 +714,18 @@ input[type=submit]:hover,
 input[type=submit]:focus {
   background-color: rgb(34, 175, 203);
   color: white;
+}
+
+footer {
+  background-color: #181c20;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
