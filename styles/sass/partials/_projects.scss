@@ -114,8 +114,12 @@ main {
 //********************//
 
 @media (max-width: 825px) {
+	main {
+		padding: 50px 0 0 0;
+	}
 	.project-list {
 		flex-direction: column;
+		gap: 20px;
 		.project-item {
 			width: 100%;
 		}

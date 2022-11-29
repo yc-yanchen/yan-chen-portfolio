@@ -22,3 +22,16 @@
 		}
 	}
 }
+
+//********************//
+// Media query: 825px //
+//********************//
+
+@media (max-width: 825px) {
+	.about-section {
+		align-items: flex-start;
+	}
+	.about-content-container {
+		width: 100%;
+	}
+}

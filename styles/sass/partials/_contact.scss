@@ -71,3 +71,17 @@ input[type="submit"]:focus {
 	background-color: var.$primary;
 	color: white;
 }
+
+//********************//
+// Media query: 825px //
+//********************//
+
+@media (max-width: 825px) {
+	.contact-flex-container {
+		flex-direction: column;
+	}
+
+	.contact-section-form {
+		width: 100%;
+	}
+}

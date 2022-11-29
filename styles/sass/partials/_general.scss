@@ -53,3 +53,20 @@ body {
 		width: 85%;
 	}
 }
+
+//********************//
+// Media query: 825px //
+//********************//
+
+@media (max-width: 825px) {
+	// Add a line divider at the top of an element
+	.section-divider {
+		border-top: 1px solid var.$gray-light;
+		margin-top: 75px;
+	}
+
+	// Add margin at the top and bottom of an element
+	.section-margin {
+		margin: 75px 0;
+	}
+}
