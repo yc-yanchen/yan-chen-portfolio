@@ -733,15 +733,11 @@ main .wrapper {
 .project-overlay-item .project-tech-item:last-child::after {
   content: "";
 }
-.project-overlay-item .project-link-list {
-  gap: 10px 15px;
-}
 .project-overlay-item .project-link-list a {
   background-color: white;
   color: #7c7c7c;
   padding: 2px 10px;
   border-radius: 5px;
-  width: 45%;
   -webkit-transition: background-color 0.15s, color 0.15s;
   transition: background-color 0.15s, color 0.15s;
 }
@@ -767,11 +763,13 @@ main .wrapper {
             flex-direction: column;
     gap: 20px;
   }
+  .project-list .project-overlay-item {
+    padding: 25px 15px;
+  }
   .project-list .project-item {
     width: 100%;
   }
   .project-overlay-item .project-link-list {
-    gap: 10px 5px;
     padding: 2px 5px;
   }
 }

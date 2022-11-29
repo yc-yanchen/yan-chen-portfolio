@@ -79,13 +79,11 @@ main {
 
 	// Styling for the link which leads to the repository/ live site.
 	.project-link-list {
-		gap: 10px 15px;
 		a {
 			background-color: white;
 			color: var.$gray;
 			padding: 2px 10px;
 			border-radius: 5px;
-			width: 45%;
 			transition: background-color 0.15s, color 0.15s;
 		}
 		// Changes colour on hover
@@ -120,13 +118,15 @@ main {
 	.project-list {
 		flex-direction: column;
 		gap: 20px;
+		.project-overlay-item {
+			padding: 25px 15px;
+		}
 		.project-item {
 			width: 100%;
 		}
 	}
 	.project-overlay-item {
 		.project-link-list {
-			gap: 10px 5px;
 			padding: 2px 5px;
 		}
 	}
