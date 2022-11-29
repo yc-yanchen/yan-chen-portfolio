@@ -893,6 +893,15 @@ input[type=submit]:focus {
   .contact-section-form {
     width: 100%;
   }
+  .visitor-information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .visitor-information .visitor-information-item {
+    width: 100%;
+  }
 }
 footer {
   background-color: #181c20;

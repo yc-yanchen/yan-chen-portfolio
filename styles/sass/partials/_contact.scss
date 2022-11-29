@@ -84,4 +84,10 @@ input[type="submit"]:focus {
 	.contact-section-form {
 		width: 100%;
 	}
+	.visitor-information {
+		flex-direction: column;
+		.visitor-information-item {
+			width: 100%;
+		}
+	}
 }
