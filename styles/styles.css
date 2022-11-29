@@ -449,6 +449,10 @@ p {
   p {
     font-size: 1.6rem;
   }
+  .project-link-item a,
+.project-tech-item {
+    font-size: 1.6rem;
+  }
 }
 header {
   background: url("../assets/header-bg.jpeg");
