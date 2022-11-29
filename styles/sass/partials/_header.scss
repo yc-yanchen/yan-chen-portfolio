@@ -21,6 +21,12 @@ header {
 	width: 100%;
 }
 
+// Add underline to navigation item when hovered or focused
+.nav-item a:focus,
+.nav-item a:hover {
+	border-bottom: 4px solid var.$gray-transparent;
+}
+
 // Horizontal layout for the smaller components of the navigation bar
 .nav-bar-container,
 .nav-bar-link,
@@ -104,31 +110,30 @@ header {
 		gap: 15px;
 	}
 
-	.tech-stack-container {
-		position: relative;
-
-		top: 75px;
-
-		.tech-stack-list {
-			flex-wrap: wrap;
-			justify-content: space-around;
-			gap: 15px 3px;
-		}
-		.tech-stack-item {
-			width: calc((100% / 3) - 3px);
-		}
-	}
 	.header-nav {
+		// Prevent logo from breaking onto different lines
 		a {
 			flex-shrink: 0;
 		}
 	}
+
+	// Removes the underline of the navigation items when hovered or focused
+	.nav-item a:focus,
+	.nav-item a:hover {
+		border-bottom: none;
+	}
+
+	// Class which is applied by default and by javascript to hide the navigation menu on smaller screens
 	.nav-closed {
 		visibility: hidden;
 	}
+
+	// Class which is applied by javascript when the hamburger menu is clicked to hide the navigation menu
 	.nav-opened {
 		visibility: visible;
 	}
+
+	// Styling for the navigation menu. Displays it in a column and add a white background
 	.nav-bar-container {
 		flex-direction: column;
 		position: absolute;
@@ -164,14 +169,33 @@ header {
 			top: 15px;
 		}
 	}
+
+	// Class which is applied by javascript to change the colour of the hamburger menu when navigation menu is opened
 	.hamburger-opened {
 		.hamburger-line {
 			background-color: var.$gray;
 		}
 	}
+
+	// Class which is applied by default and by javascript to set the hamburger menu to white
 	.hamburger-closed {
 		.hamburger-line {
 			background-color: white;
+		}
+	}
+
+	// Modifies the tech-stack-container to display its content in a gridlike style
+	.tech-stack-container {
+		position: relative;
+		top: 75px;
+
+		.tech-stack-list {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			gap: 15px 3px;
+		}
+		.tech-stack-item {
+			width: calc((100% / 3) - 3px);
 		}
 	}
 }

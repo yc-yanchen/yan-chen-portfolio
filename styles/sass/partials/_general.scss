@@ -49,6 +49,7 @@ body {
 //*********************//
 
 @media (max-width: 1150px) {
+	// Decrease the amount of empty space provided by the wrapper on either side of the page on smaller screens
 	.wrapper {
 		width: 85%;
 	}
