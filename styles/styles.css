@@ -325,6 +325,9 @@ body {
   }
 }
 @media (max-width: 825px) {
+  .main-section {
+    gap: 30px;
+  }
   .section-divider {
     border-top: 1px solid #dce0e4;
     margin-top: 75px;
