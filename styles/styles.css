@@ -446,7 +446,7 @@ p {
 .header-greeting {
     font-size: 3rem;
   }
-  p,
+  .project-overlay-information p,
 .project-link-item a,
 .project-tech-item {
     font-size: 1.6rem;
