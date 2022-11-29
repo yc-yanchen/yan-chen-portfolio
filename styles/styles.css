@@ -446,12 +446,14 @@ p {
 .header-greeting {
     font-size: 3rem;
   }
-  p {
-    font-size: 1.6rem;
-  }
-  .project-link-item a,
+  p,
+.project-link-item a,
 .project-tech-item {
     font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .project-overlay-information p {
+    overflow-y: scroll;
   }
 }
 header {
@@ -767,6 +769,10 @@ main .wrapper {
   }
   .project-list .project-item {
     width: 100%;
+  }
+  .project-overlay-item .project-link-list {
+    gap: 10px 5px;
+    padding: 2px 5px;
   }
 }
 .about-section {

@@ -120,11 +120,15 @@ p {
 	.header-greeting {
 		font-size: 3rem;
 	}
-	p {
-		font-size: 1.6rem;
-	}
+
+	p,
 	.project-link-item a,
 	.project-tech-item {
 		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+
+	.project-overlay-information p {
+		overflow-y: scroll;
 	}
 }
