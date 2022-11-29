@@ -769,7 +769,11 @@ main .wrapper {
   .project-list .project-item {
     width: 100%;
   }
-  .project-overlay-item .project-link-list {
+  .project-overlay-item .project-overlay-information,
+.project-overlay-item .project-overlay-detail {
+    gap: 10px;
+  }
+  .project-overlay-item .project-link-list a {
     padding: 2px 5px;
   }
 }
