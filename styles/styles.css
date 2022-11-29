@@ -452,9 +452,6 @@ p {
     font-size: 1.6rem;
     line-height: 2rem;
   }
-  .project-overlay-information p {
-    overflow-y: scroll;
-  }
 }
 header {
   background: url("../assets/header-bg.jpeg");
@@ -762,9 +759,6 @@ main .wrapper {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-  }
-  .project-list .project-overlay-item {
-    padding: 25px 15px;
   }
   .project-list .project-item {
     width: 100%;
