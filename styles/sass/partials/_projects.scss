@@ -13,7 +13,7 @@ main {
 // Styling for the ul.project-list layout
 .project-list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 100%;
 	position: relative;
 	flex-wrap: wrap;
@@ -21,7 +21,7 @@ main {
 	.project-item {
 		height: 350px;
 		// Change the denominator to adjust number of projects displayed per row
-		width: calc((100% / 3) - 8px);
+		width: calc((100% / 3) - 6px);
 	}
 	.img-container {
 		height: 100%;
@@ -93,6 +93,31 @@ main {
 		a:hover {
 			background-color: var.$primary;
 			color: white;
+		}
+	}
+}
+
+//*********************//
+// Media query: 1350px //
+//*********************//
+
+@media (max-width: 1350px) {
+	.project-list {
+		.project-item {
+			width: calc((100% / 2) - 6px);
+		}
+	}
+}
+
+//********************//
+// Media query: 825px //
+//********************//
+
+@media (max-width: 825px) {
+	.project-list {
+		flex-direction: column;
+		.project-item {
+			width: 100%;
 		}
 	}
 }

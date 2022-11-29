@@ -103,3 +103,17 @@ p {
 		font-size: 3rem;
 	}
 }
+
+//********************//
+// Media query: 825px //
+//********************//
+
+@media (max-width: 825px) {
+	.nav-bar-container a {
+		color: var.$gray;
+	}
+	.nav-item a:focus,
+	.nav-item a:hover {
+		border-bottom: none;
+	}
+}

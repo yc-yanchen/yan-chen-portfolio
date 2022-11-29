@@ -4,6 +4,10 @@ html {
 	font-size: 62.5%;
 }
 
+body {
+	position: relative;
+}
+
 .wrapper {
 	width: 80%;
 	max-width: 1300px;
@@ -30,4 +34,22 @@ html {
 // Add margin at the top and bottom of an element
 .section-margin {
 	margin: 100px 0;
+}
+
+// General styling
+.center-column-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+//*********************//
+// Media query: 1150px //
+//*********************//
+
+@media (max-width: 1150px) {
+	.wrapper {
+		width: 85%;
+	}
 }
