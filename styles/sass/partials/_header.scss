@@ -98,6 +98,12 @@ header {
 		border-bottom-right-radius: 0;
 	}
 
+	// Layout for the text container in the header
+	.header-text-container {
+		padding-top: 100px;
+		gap: 15px;
+	}
+
 	.tech-stack-container {
 		position: relative;
 
