@@ -442,6 +442,13 @@ p {
 .nav-item a:hover {
     border-bottom: none;
   }
+  .main-section-heading,
+.header-greeting {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
 }
 header {
   background: url("../assets/header-bg.jpeg");
@@ -556,7 +563,7 @@ header .wrapper {
   }
   .tech-stack-container {
     position: relative;
-    top: 100px;
+    top: 75px;
   }
   .tech-stack-container .tech-stack-list {
     -ms-flex-wrap: wrap;
