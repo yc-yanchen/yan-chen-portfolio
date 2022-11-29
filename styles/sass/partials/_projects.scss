@@ -118,14 +118,15 @@ main {
 	.project-list {
 		flex-direction: column;
 		gap: 20px;
-		.project-overlay-item {
-			// padding: 25px 15px;
-		}
+
 		.project-item {
 			width: 100%;
 		}
 	}
 	.project-overlay-item {
+		.project-tech-list {
+			gap: 5px;
+		}
 		.project-overlay-information,
 		.project-overlay-detail {
 			gap: 10px;

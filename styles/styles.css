@@ -763,6 +763,9 @@ main .wrapper {
   .project-list .project-item {
     width: 100%;
   }
+  .project-overlay-item .project-tech-list {
+    gap: 5px;
+  }
   .project-overlay-item .project-overlay-information,
 .project-overlay-item .project-overlay-detail {
     gap: 10px;
