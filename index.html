@@ -280,20 +280,21 @@
 							</ul>
 							<!-- .social-link END -->
 						</div>
-						<form action="#" class="contact-section-form" data-netlify="true">
-							<!-- <ul class="visitor-information"> -->
-							<!-- <li class="visitor-information-item"> -->
-							<label for="visitor-name" class="sr-only"></label>
-							<input type="text" id="visitor-name" placeholder="Name" class="input-form-style">
-							<!-- </li> -->
-							<!-- <li class="visitor-information-item"> -->
-							<label for="visitor-email" class="sr-only"></label>
-							<input type="email" id="visitor-email" placeholder="Email" class="input-form-style">
-							<!-- </li> -->
-							<!-- </ul> -->
+						<form method="POST" class="contact-section-form" data-netlify="true">
+							<ul class="visitor-information">
+								<li class="visitor-information-item">
+									<label for="visitor-name" class="sr-only"></label>
+									<input type="text" id="visitor-name" placeholder="Name" class="input-form-style">
+								</li>
+								<li class="visitor-information-item">
+									<label for="visitor-email" class="sr-only"></label>
+									<input type="email" id="visitor-email" placeholder="Email" class="input-form-style">
+								</li>
+							</ul>
 							<textarea name="message" id="visitor-message" cols="30" rows="10" placeholder="Message"
 								class="input-form-style"></textarea>
-							<input type="submit" value="Submit Message">
+							<button type="submit">Send</button>
+							<!-- <input type="submit" value="Submit Message"> -->
 						</form>
 					</div>
 					<!-- .contact-flex-container END -->
