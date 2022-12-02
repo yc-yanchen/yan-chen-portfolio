@@ -880,8 +880,8 @@ input[type=submit] {
   transition: background-color 0.15s, color 0.15s;
 }
 
-input[type=submit]:hover,
-input[type=submit]:focus {
+button[type=submit]:hover,
+button[type=submit]:focus {
   background-color: rgb(34, 175, 203);
   color: white;
 }

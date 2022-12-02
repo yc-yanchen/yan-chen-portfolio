@@ -66,8 +66,8 @@ input[type="submit"] {
 }
 
 // Hover and focus effect for the button
-input[type="submit"]:hover,
-input[type="submit"]:focus {
+button[type="submit"]:hover,
+button[type="submit"]:focus {
 	background-color: var.$primary;
 	color: white;
 }
