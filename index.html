@@ -280,7 +280,27 @@
 							</ul>
 							<!-- .social-link END -->
 						</div>
-						<form method="POST" class="contact-section-form" data-netlify="true">
+						<form name="contact" method="POST" data-netlify="true">
+							<p>
+								<label>Your Name: <input type="text" name="name" /></label>
+							</p>
+							<p>
+								<label>Your Email: <input type="email" name="email" /></label>
+							</p>
+							<p>
+								<label>Your Role: <select name="role[]" multiple>
+										<option value="leader">Leader</option>
+										<option value="follower">Follower</option>
+									</select></label>
+							</p>
+							<p>
+								<label>Message: <textarea name="message"></textarea></label>
+							</p>
+							<p>
+								<button type="submit">Send</button>
+							</p>
+						</form>
+						<!-- <form method="POST" class="contact-section-form" data-netlify="true">
 							<ul class="visitor-information">
 								<li class="visitor-information-item">
 									<label for="visitor-name" class="sr-only"></label>
@@ -293,9 +313,8 @@
 							</ul>
 							<textarea name="message" id="visitor-message" cols="30" rows="10" placeholder="Message"
 								class="input-form-style"></textarea>
-							<button type="submit">Send</button>
-							<!-- <input type="submit" value="Submit Message"> -->
-						</form>
+							<input type="submit" value="Submit Message">
+						</form> -->
 					</div>
 					<!-- .contact-flex-container END -->
 				</section>
