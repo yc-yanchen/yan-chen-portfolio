@@ -1,5 +1,5 @@
 document.querySelector(".hamburger-menu").addEventListener("click", () => {
-	const selection = document.querySelector(".nav-bar-container").classList[3];
+	const selection = document.querySelector(".nav-bar-container").classList[1];
 	if (selection == "element-closed") {
 		document.querySelector(".nav-bar-container").className = "nav-bar-container element-opened";
 		document.querySelector(".hamburger-menu").className = "hamburger-menu hamburger-opened";
