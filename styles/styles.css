@@ -324,11 +324,6 @@ body {
   opacity: 0;
 }
 
-.element-open {
-  visibility: visible;
-  opacity: 1;
-}
-
 @media (max-width: 1150px) {
   .wrapper {
     width: 85%;
@@ -624,15 +619,13 @@ header .wrapper {
     position: relative;
     height: 3px;
     width: 30px;
+    background-color: white;
   }
   .hamburger-menu .hamburger-line:nth-child(2) {
     top: 15px;
   }
   .hamburger-opened .hamburger-line {
     background-color: #7c7c7c;
-  }
-  .hamburger-closed .hamburger-line {
-    background-color: white;
   }
   .tech-stack-container {
     position: relative;
@@ -647,6 +640,9 @@ header .wrapper {
   }
   .tech-stack-container .tech-stack-item {
     width: calc(33.3333333333% - 3px);
+  }
+  .nav-closed {
+    visibility: hidden;
   }
 }
 main {
@@ -875,6 +871,11 @@ main .wrapper {
   border: 1px solid #dce0e4;
   padding: 15px;
   border-radius: 5px;
+}
+
+.input-form-style:focus,
+textarea:focus {
+  outline: none;
 }
 
 textarea {

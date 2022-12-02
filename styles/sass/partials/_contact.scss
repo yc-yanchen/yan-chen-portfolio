@@ -47,6 +47,11 @@
 	border-radius: 5px;
 }
 
+.input-form-style:focus,
+textarea:focus {
+	outline: none;
+}
+
 // Resizing the textarea element
 textarea {
 	resize: none;

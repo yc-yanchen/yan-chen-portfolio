@@ -1,12 +1,6 @@
 document.querySelector(".hamburger-menu").addEventListener("click", () => {
-	const selection = document.querySelector(".nav-bar-container").classList[1];
-	if (selection == "element-closed") {
-		document.querySelector(".nav-bar-container").className = "nav-bar-container element-opened";
-		document.querySelector(".hamburger-menu").className = "hamburger-menu hamburger-opened";
-	} else {
-		document.querySelector(".nav-bar-container").className = "nav-bar-container element-closed";
-		document.querySelector(".hamburger-menu").className = "hamburger-menu hamburger-closed";
-	}
+	document.querySelector(".nav-bar-container").classList.toggle("nav-closed");
+	document.querySelector(".hamburger-menu").classList.toggle("hamburger-opened");
 });
 
 document.querySelector("#project-item-1").addEventListener("click", () => {
