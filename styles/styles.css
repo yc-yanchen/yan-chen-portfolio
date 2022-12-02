@@ -319,6 +319,16 @@ body {
   text-align: center;
 }
 
+.element-closed {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.element-open {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media (max-width: 1150px) {
   .wrapper {
     width: 85%;
@@ -582,12 +592,6 @@ header .wrapper {
 .nav-item a:focus {
     border-bottom: none;
   }
-  .nav-closed {
-    visibility: hidden;
-  }
-  .nav-opened {
-    visibility: visible;
-  }
   .nav-bar-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -679,6 +683,7 @@ main .wrapper {
   width: calc(33.3333333333% - 6px);
   background-color: #f1f5f9;
   border-radius: 5px;
+  cursor: pointer;
 }
 .project-list .img-container {
   height: 100%;
@@ -713,14 +718,8 @@ main .wrapper {
   top: -100%;
   border-radius: 5px;
   padding: 25px 25px;
-  opacity: 0;
   -webkit-transition: opacity 0.15s;
   transition: opacity 0.15s;
-}
-.project-list .project-item:hover .project-overlay-item,
-.project-list .project-item:active .project-overlay-item,
-.project-list .project-item:focus .project-overlay-item {
-  opacity: 1;
 }
 
 .project-overlay-item .project-link-list,
@@ -758,7 +757,6 @@ main .wrapper {
   transition: background-color 0.15s, color 0.15s;
 }
 .project-overlay-item .project-link-list a:hover,
-.project-overlay-item .project-link-list a:active,
 .project-overlay-item .project-link-list a:focus {
   background-color: rgb(34, 175, 203);
   color: white;

@@ -44,6 +44,18 @@ body {
 	text-align: center;
 }
 
+// Class which is applied by default and by javascript to hide the navigation menu on smaller screens
+.element-closed {
+	visibility: hidden;
+	opacity: 0;
+}
+
+// Class which is applied by javascript when the hamburger menu is clicked to hide the navigation menu
+.element-open {
+	visibility: visible;
+	opacity: 1;
+}
+
 //*********************//
 // Media query: 1150px //
 //*********************//

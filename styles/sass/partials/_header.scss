@@ -125,16 +125,6 @@ header {
 		border-bottom: none;
 	}
 
-	// Class which is applied by default and by javascript to hide the navigation menu on smaller screens
-	.nav-closed {
-		visibility: hidden;
-	}
-
-	// Class which is applied by javascript when the hamburger menu is clicked to hide the navigation menu
-	.nav-opened {
-		visibility: visible;
-	}
-
 	// Styling for the navigation menu. Displays it in a column and add a white background
 	.nav-bar-container {
 		flex-direction: column;
@@ -142,7 +132,6 @@ header {
 		background-color: white;
 		-webkit-box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
 		box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
-		// height: 100vh;
 		width: 100vw;
 		z-index: 1;
 		padding: 50px 0px 50px 50px;

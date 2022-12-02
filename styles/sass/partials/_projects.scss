@@ -25,6 +25,7 @@ main {
 		width: calc((100% / 3) - 6px);
 		background-color: var.$gray-blue;
 		border-radius: 5px;
+		cursor: pointer;
 	}
 	.img-container {
 		height: 100%;
@@ -47,17 +48,17 @@ main {
 		top: -100%;
 		border-radius: 5px;
 		padding: 25px 25px;
-		// Hiding the overlay element
-		opacity: 0;
+		// Remove later
 		transition: opacity 0.15s;
+		// cursor: pointer;
 	}
 
 	// Display the overlay element on hover or on focus
-	.project-item:hover .project-overlay-item,
-	.project-item:active .project-overlay-item,
-	.project-item:focus .project-overlay-item {
-		opacity: 1;
-	}
+	// 	.project-item:hover .project-overlay-item,
+	// 	.project-item:active .project-overlay-item,
+	// 	.project-item:focus .project-overlay-item {
+	// 		opacity: 1;
+	// 	}
 }
 
 // Styling for the elements within the overlay
@@ -93,7 +94,6 @@ main {
 		}
 		// Changes colour on hover
 		a:hover,
-		a:active,
 		a:focus {
 			background-color: var.$primary;
 			color: white;
