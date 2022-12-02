@@ -78,7 +78,11 @@ p {
 	}
 
 	.tech-stack-item:hover p,
-	.tech-stack-item:hover i {
+	.tech-stack-item:hover i,
+	.tech-stack-item:active p,
+	.tech-stack-item:active i,
+	.tech-stack-item:focus p,
+	.tech-stack-item:focus i {
 		color: var.$primary;
 	}
 }

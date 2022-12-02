@@ -22,8 +22,9 @@ header {
 }
 
 // Add underline to navigation item when hovered or focused
-.nav-item a:focus,
-.nav-item a:hover {
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a:focus {
 	border-bottom: 4px solid var.$gray-transparent;
 }
 
@@ -118,8 +119,9 @@ header {
 	}
 
 	// Removes the underline of the navigation items when hovered or focused
-	.nav-item a:focus,
-	.nav-item a:hover {
+	.nav-item a:hover,
+	.nav-item a:active,
+	.nav-item a:focus {
 		border-bottom: none;
 	}
 

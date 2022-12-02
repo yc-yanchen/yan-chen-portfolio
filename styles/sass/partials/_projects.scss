@@ -18,16 +18,20 @@ main {
 	position: relative;
 	flex-wrap: wrap;
 	gap: 8px 0;
+
 	.project-item {
 		height: 350px;
 		// Change the denominator to adjust number of projects displayed per row
 		width: calc((100% / 3) - 6px);
+		background-color: var.$gray-blue;
+		border-radius: 5px;
 	}
 	.img-container {
 		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		img {
-			object-fit: cover;
-			height: 100%;
 			border-radius: 5px;
 		}
 	}
@@ -50,6 +54,7 @@ main {
 
 	// Display the overlay element on hover or on focus
 	.project-item:hover .project-overlay-item,
+	.project-item:active .project-overlay-item,
 	.project-item:focus .project-overlay-item {
 		opacity: 1;
 	}
@@ -87,8 +92,9 @@ main {
 			transition: background-color 0.15s, color 0.15s;
 		}
 		// Changes colour on hover
-		a:focus,
-		a:hover {
+		a:hover,
+		a:active,
+		a:focus {
 			background-color: var.$primary;
 			color: white;
 		}
