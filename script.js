@@ -3,15 +3,13 @@ document.querySelector(".hamburger-menu").addEventListener("click", () => {
 	document.querySelector(".hamburger-menu").classList.toggle("hamburger-opened");
 });
 
-document.querySelector("#project-item-1").addEventListener("click", () => {
-	document.querySelector("#project-overlay-1").classList.toggle("element-closed");
+// Create a node list of all project-items
+const projectItems = document.querySelectorAll('.project-item');
+
+// Take the id of each item, then add an event listener to it which allow the opening and closing of the textbox
+projectItems.forEach((item) => {
+	document.querySelector(`#${item.id}`).addEventListener('click', () => {
+		document.querySelector(`#${item.children[1].id}`).classList.toggle('element-closed');
+	});
 });
-document.querySelector("#project-item-2").addEventListener("click", () => {
-	document.querySelector("#project-overlay-2").classList.toggle("element-closed");
-});
-document.querySelector("#project-item-3").addEventListener("click", () => {
-	document.querySelector("#project-overlay-3").classList.toggle("element-closed");
-});
-document.querySelector("#project-item-4").addEventListener("click", () => {
-	document.querySelector("#project-overlay-4").classList.toggle("element-closed");
-});
+
