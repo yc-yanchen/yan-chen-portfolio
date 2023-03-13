@@ -446,13 +446,13 @@ p {
     color: #7c7c7c;
   }
   .main-section-heading,
-.header-greeting {
+  .header-greeting {
     font-size: 3rem;
   }
   footer p,
-.project-overlay-information p,
-.project-link-item a,
-.project-tech-item {
+  .project-overlay-information p,
+  .project-link-item a,
+  .project-tech-item {
     font-size: 1.6rem;
     line-height: 2rem;
   }
@@ -583,8 +583,8 @@ header .wrapper {
         flex-shrink: 0;
   }
   .nav-item a:hover,
-.nav-item a:active,
-.nav-item a:focus {
+  .nav-item a:active,
+  .nav-item a:focus {
     border-bottom: none;
   }
   .nav-bar-container {
@@ -665,9 +665,8 @@ main .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   position: relative;
   -ms-flex-wrap: wrap;
@@ -781,7 +780,7 @@ main .wrapper {
     gap: 5px;
   }
   .project-overlay-item .project-overlay-information,
-.project-overlay-item .project-overlay-detail {
+  .project-overlay-item .project-overlay-detail {
     gap: 10px;
   }
   .project-overlay-item .project-link-list a {
@@ -940,4 +939,8 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+footer p {
+  font-size: 1.6rem;
 }
